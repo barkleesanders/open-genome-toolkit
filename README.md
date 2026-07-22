@@ -32,12 +32,16 @@ financial assistance policy that most people never ask for.
 **"I want genetic testing but can't pay for it."**
 → [Testing access §4](references/testing-access.md#4-free-genetic-testing-through-research)
 
-[**All of Us**](https://joinallofus.org) returns ancestry, 59 medically
-actionable genes, pharmacogenetics, and **free genetic counseling** — at no cost,
-and pays $25 for an in-person sample. If you live in Nevada, Minnesota,
-Wisconsin, Pennsylvania, or New Jersey, your health system may run a free
+If you live in Nevada, Minnesota, Wisconsin, Pennsylvania, or New Jersey, your
+health system may run a free
 [Helix screening program](https://www.helix.com/health-systems/population-genomics-partners)
-almost nobody knows about.
+that almost nobody knows about — clinical-grade screening, no insurance required.
+
+⚠️ **Correction most guides have missed:** *All of Us* **stopped returning DNA
+results to participants** after 2024. Nearly every "free genetic testing"
+article still recommends it for that. Joining is still a real contribution to
+science — just not a way to get your own results.
+[Details](references/testing-access.md)
 
 **"How do my genes affect my medications?"**
 → [Pharmacogenomics guide](references/pharmacogenomics.md)
@@ -100,7 +104,7 @@ that print to PDF cleanly and carry the disclaimer automatically.
 
 | Guide | Covers |
 |---|---|
-| [**Testing access**](references/testing-access.md) | Free/at-cost routes: ACA $0 screenings, FQHC sliding scale, hospital charity care under IRS §501(r), All of Us, Helix programs, GoodLabs blood-donation model, direct-to-consumer lab prices. Plus which widely-repeated claims are wrong. |
+| [**Testing access**](references/testing-access.md) | Free/at-cost routes: ACA $0 screenings, FQHC sliding scale, hospital charity care under IRS §501(r), Helix programs, GoodLabs blood-donation model, direct-to-consumer lab prices. Plus which widely-repeated claims are wrong. |
 | [**Pharmacogenomics**](references/pharmacogenomics.md) | How your genes affect drug response, which gene/drug pairs have real prescribing guidance, and how to get tested. |
 | [**Analysis pipeline**](references/dna-analysis-pipeline.md) | Raw data → imputation → clumping → scoring. Free tools, real commands, and the traps (genome build mismatch, imputation quality filtering). |
 | [**Interpreting results**](references/interpreting-results.md) | Why a raw score means nothing alone, the ancestry portability problem, relative vs absolute risk, why consumer chips aren't clinical tests. |

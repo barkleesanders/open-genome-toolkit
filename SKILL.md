@@ -1,7 +1,7 @@
 ---
 name: open-genome-toolkit
 user-invocable: true
-description: "Help someone get affordable genetic and lab testing, analyze their own raw DNA with free open-source tools, understand what the results actually mean, and contribute their data to research. Covers free/at-cost testing routes (ACA preventive screenings, FQHC sliding scale, hospital charity care, All of Us, Helix health-system programs, GoodLabs, direct-to-consumer labs), the full DNA analysis pipeline (normalize, impute, clump, polygenic scoring, pharmacogenomics), genealogy research with DNA matches and records, and the privacy/legal tradeoffs. Use when someone asks how to get a blood test or genetic test cheaply or for free, what to do with their 23andMe/AncestryDNA raw data, how to compute a polygenic risk score, how PGx/pharmacogenomic testing works, how to research family history with DNA, whether a genetic result means anything, or where to donate their data to science. Triggers: 'cheap lab test', 'free genetic testing', 'no insurance blood work', 'raw DNA data', '23andMe raw data', 'polygenic risk score', 'PRS', 'imputation', 'pharmacogenomics', 'PGx', 'how do meds affect me', 'genetic ancestry', 'family history research', 'DNA matches', 'donate my DNA to research', 'is this genetic result real'."
+description: "Help someone get affordable genetic and lab testing, analyze their own raw DNA with free open-source tools, understand what the results actually mean, and contribute their data to research. Covers free/at-cost testing routes (ACA preventive screenings, FQHC sliding scale, hospital charity care, Helix health-system programs, GoodLabs, direct-to-consumer labs), the full DNA analysis pipeline (normalize, impute, clump, polygenic scoring, pharmacogenomics), genealogy research with DNA matches and records, and the privacy/legal tradeoffs. Use when someone asks how to get a blood test or genetic test cheaply or for free, what to do with their 23andMe/AncestryDNA raw data, how to compute a polygenic risk score, how PGx/pharmacogenomic testing works, how to research family history with DNA, whether a genetic result means anything, or where to donate their data to science. Triggers: 'cheap lab test', 'free genetic testing', 'no insurance blood work', 'raw DNA data', '23andMe raw data', 'polygenic risk score', 'PRS', 'imputation', 'pharmacogenomics', 'PGx', 'how do meds affect me', 'genetic ancestry', 'family history research', 'DNA matches', 'donate my DNA to research', 'is this genetic result real'."
 ---
 
 # Open Genome Toolkit
@@ -87,7 +87,10 @@ because they have only ever seen retail prices. Before anything else, check:
   https://findahealthcenter.hrsa.gov
 - Do they live near a **Helix partner health system** (NV, MN/WI, PA, NJ)?
   That is free clinical-grade genetic screening almost nobody knows about.
-- **All of Us** returns free genetic results *and* free genetic counseling.
+- **Do NOT tell them All of Us returns free genetic results.** It did from
+  2020-2024 and stopped; the program's own site says so. Almost every guide
+  online is still stale on this. Joining remains a genuine contribution to
+  science, but it no longer returns your own results.
 
 **2. Correct two expensive misconceptions when they come up.**
 

@@ -87,10 +87,10 @@ each score's development and validation samples. If a score was developed
 entirely in European-ancestry cohorts and you are not of European ancestry, treat
 the output as an interesting artifact, not information about you.
 
-This is a reason to **participate** in research like *All of Us*, which is
-explicitly recruiting for diversity — see
+This is a reason to **participate** in research programs that recruit for
+ancestral diversity — see
 [contribute-to-research.md](contribute-to-research.md). The gap closes only when
-the underlying data changes.
+the underlying data changes, and that requires people to contribute.
 
 ---
 

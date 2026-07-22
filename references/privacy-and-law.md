@@ -178,7 +178,7 @@ But the destinations differ enormously in what you are giving up:
 
 | Destination | Exposure |
 |---|---|
-| **All of Us (NIH)** | Controlled access for approved researchers. Strongest formal protections. You get results back. |
+| **All of Us (NIH)** | Controlled access for approved researchers. Strongest formal protections of the group. Note: as of 2025 it no longer returns results to you. |
 | **Open Humans** | You choose per-project what to share. Granular consent is the entire design. |
 | **Personal Genome Project** | **Maximum exposure by design** — public, non-anonymous, and irrevocable in practice. Only for people who genuinely accept permanent public identifiability. |
 

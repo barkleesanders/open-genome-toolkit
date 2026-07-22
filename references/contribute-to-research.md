@@ -1,8 +1,8 @@
 # Contributing your data to science
 
-Your data is more valuable to research than it is to you sitting on a hard drive
-— and unlike most forms of donation, this one can pay you back with free
-clinical-grade testing.
+Your data is more valuable to research than it is sitting on your hard drive, and
+in some programs contributing still pays you back with free clinical-grade
+testing.
 
 There is also a specific reason this matters more than usual right now.
 
@@ -27,21 +27,34 @@ to me," participating is the mechanism by which that stops being true.
 
 ## Where to contribute
 
-### All of Us Research Program (NIH) — best overall
+### All of Us Research Program (NIH) — best for contribution, **not for results**
 
 **https://joinallofus.org**
 
-The strongest combination of real research value, protections, and return to you.
+The largest US precision-medicine cohort, with the strongest formal protections
+of any option here. Be clear about what you do and do not get:
 
 | | |
 |---|---|
 | **You give** | Surveys, EHR access, physical measurements, a blood or saliva sample |
-| **You get** | Ancestry and traits reports; hereditary disease risk across **59 medically actionable genes**; pharmacogenetics; **free genetic counseling**; free confirmatory clinical testing if something concerning appears; **$25** for an in-person sample |
+| **You get back** | ⚠️ **No genetic results.** See below. |
 | **Access model** | Controlled access — approved researchers only, under a data-use agreement |
 | **Eligibility** | US adults |
 
-*All of Us* is explicitly recruiting for ancestral diversity, which makes it the
-highest-leverage option in this entire document.
+> ⚠️ **This changed, and most guides have not caught up.** From 2020 to 2024,
+> *All of Us* returned genetic ancestry, a 59-gene hereditary disease risk
+> report, pharmacogenetics, and free genetic counseling — one of the best deals
+> in consumer genomics. **That program has ended.** The program's own site
+> states: *"All of Us is no longer returning research DNA results."*
+> (https://www.joinallofus.org/DNA-and-Research, verified 2026-07-21.)
+
+**So why still join?** Because contribution is the point of this page. *All of
+Us* recruits explicitly for **ancestral diversity**, which is the only thing that
+closes the portability gap described above. If your motivation is altruistic and
+long-term, it remains the highest-leverage option here.
+
+If your motivation is getting your own results, this is no longer the route —
+see the health-system programs below.
 
 ### Open Humans — best for control
 
@@ -125,10 +138,12 @@ Read the **consent document**, not the marketing page. Then answer these:
 
 **Real benefits:**
 
-- Free clinical-grade testing you would otherwise pay for, sometimes with free
-  genetic counseling attached.
-- Findings that change medical care for a small but real fraction of participants.
-- A direct, measurable contribution to closing the diversity gap.
+- A direct, measurable contribution to closing the diversity gap — the thing that
+  makes genetic medicine work for people it currently fails.
+- **Some** programs still return free clinical-grade results (the health-system
+  programs above). Check per program; do not assume — *All of Us* stopped.
+- For programs that do return results, findings that change medical care for a
+  small but real fraction of participants.
 
 **Real costs:**
 
@@ -138,8 +153,10 @@ Read the **consent document**, not the marketing page. Then answer these:
 - Institutional custody is not a security guarantee — UK Biobank, a
   government-backed biobank, was breached in April 2026.
 
-**A reasonable default for most people:** join **All of Us** (controlled access,
-returns results, actively addresses the diversity gap), use **Open Humans** for
+**A reasonable default for most people:** join **All of Us** if you want to
+contribute to the strongest-protected, most ancestrally diverse cohort (accepting
+that it no longer returns results), check whether a **Helix health-system
+program** near you returns free clinical-grade results, use **Open Humans** for
 anything where you want per-project control, and think very hard before anything
 irrevocably public.
 

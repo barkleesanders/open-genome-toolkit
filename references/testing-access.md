@@ -210,32 +210,33 @@ These programs give you clinical-grade genetic results at no cost, because you
 are contributing to research. This is the single best value in the whole
 directory.
 
-### All of Us Research Program (NIH) **[confirmed]**
+### ⚠️ All of Us Research Program — **no longer returns DNA results**
 
 **https://joinallofus.org** · https://allofus.nih.gov
 
-The flagship US precision-medicine program. Participants receive, at **no cost**:
+**This is the correction most other guides have not caught yet.** Nearly every
+"free genetic testing" article still recommends *All of Us* for free genetic
+results. As of this writing that is wrong. From the program's own
+[DNA and Research page](https://www.joinallofus.org/DNA-and-Research), read
+live on 2026-07-21:
 
-- **Genetic ancestry and traits** reports
-- **Hereditary Disease Risk** — 59 genes and variants associated with serious,
-  **medically actionable** conditions
-- **Medicine and Your DNA** — pharmacogenetics for seven genes affecting drug
-  metabolism
-- **Free genetic counseling**
-- **Free confirmatory clinical testing** if a concerning result comes back
-- **$25** for providing a sample at an in-person appointment (mail-in samples are
-  not compensated)
+> *"Between 2020 and 2024, All of Us returned research DNA results to eligible
+> participants. **All of Us is no longer returning research DNA results.**"*
 
-Scale: data from 600,000+ participants; results returned to 220,000+ people.
-Roughly 2–3% receive a result indicating increased disease risk.
+Between 2020 and 2024 participants did receive — free — genetic ancestry and
+traits, a hereditary disease risk report covering 59 medically actionable genes,
+a "Medicine and Your DNA" pharmacogenetics report, and free genetic counseling.
+Results went to 220,000+ people. **That program has ended.**
 
-*All of Us* is also explicitly recruiting for **ancestral diversity**, which
-directly addresses the biggest weakness in the whole field — see
-[interpreting-results.md §3](interpreting-results.md). Participating is one of the
-few ways an individual can help fix it.
+**What this means for you:** joining *All of Us* is still a real contribution to
+science, and the program still enrolls. But **do not join expecting to receive
+your own genetic results** — that is no longer part of the deal. If your goal is
+free results, see the Helix programs below instead.
 
-> Status note: enrollment **appears open** and no pause was found, but NIH is
-> under budget pressure in 2026. Verify at joinallofus.org before counting on it.
+If you want to contribute anyway — and there are good reasons to, especially
+around the ancestry diversity gap described in
+[interpreting-results.md §3](interpreting-results.md) — see
+[contribute-to-research.md](contribute-to-research.md).
 
 ### Helix health-system programs — the most underrated free option **[confirmed]**
 
@@ -377,14 +378,14 @@ before 2025. Both are gone.
 | Basic bloodwork, insured | ACA preventive screening, in-network | **$0** |
 | Basic bloodwork, uninsured | FQHC sliding scale | **$0 to nominal** |
 | Basic bloodwork, no visit | Walk-In Lab lipid panel | **$39** |
-| Clinical-grade genetic screening | All of Us, or a Helix health-system program | **$0** (All of Us pays $25) |
+| Clinical-grade genetic screening | A Helix health-system program, if you live in a partner region | **$0** |
 | Raw DNA to analyze yourself | MyHeritage kit on promo | **$29** |
 | Deep analysis of that raw DNA | This repo's scripts + free imputation + PGS Catalog | **$0** |
 | Comprehensive annual panel | Function Health | **$365/yr** |
 
 **The most common mistake is paying retail.** Before buying any test, check
 whether it is a $0 ACA preventive service, whether your regional health system
-runs a free Helix program, and whether *All of Us* covers what you wanted.
+runs a free Helix program before paying retail for genetic screening.
 
 ---
 
