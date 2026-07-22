@@ -69,6 +69,28 @@ grep -qi "not a risk estimate" <<<"$out" || fail "interpretation caveat missing 
 pass "score: output carries the interpretation caveat"
 
 echo
+echo "== real PGS Catalog file (network; skipped if offline) =="
+REAL="$TMP/PGS000023.txt.gz"
+if curl -sS --max-time 25 -o "$REAL" \
+     "https://ftp.ebi.ac.uk/pub/databases/spot/pgs/scores/PGS000023/ScoringFiles/PGS000023.txt.gz" 2>/dev/null \
+   && [ -s "$REAL" ]; then
+  # Build a genome homozygous for every effect allele: score must equal
+  # exactly 2x the sum of the file's weights.
+  { printf 'rsid\tchrom\tpos\tgenotype\n'
+    gunzip -c "$REAL" | grep -v '^#' | tail -n +2 \
+      | awk -F'\t' '{print $1"\t"$2"\t"$3"\t"$4$4}'
+  } > "$TMP/real_geno.tsv"
+  expected=$(gunzip -c "$REAL" | grep -v '^#' | tail -n +2 \
+             | awk -F'\t' '{s+=$5} END{printf "%.6f", 2*s}')
+  got=$(python3 scripts/score_pgs.py --genome "$TMP/real_geno.tsv" --score "$REAL" \
+        | awk '/raw score/{print $NF}')
+  [ "$got" = "$expected" ] || fail "real PGS file: got $got, expected $expected"
+  pass "real PGS Catalog file scores to $expected (2x sum of weights)"
+else
+  printf '  \033[33mskip\033[0m network unavailable\n'
+fi
+
+echo
 echo "== zip input handling =="
 (cd "$TMP" && zip -q raw.zip raw.txt)
 python3 scripts/normalize_raw_dna.py "$TMP/raw.zip" -o "$TMP/norm2.tsv" >/dev/null \

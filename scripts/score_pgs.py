@@ -161,6 +161,16 @@ def score(genome: dict[str, str], rows: list[dict[str, str]]) -> ScoreResult:
                 "scoring file supplies odds ratios, not betas; weights were "
                 "log-transformed so they sum on the same scale"
             )
+        if other_key is None:
+            # Palindrome detection needs both alleles to know the pair is A/T or
+            # C/G. Without the other allele the check cannot run, and silently
+            # not running it is exactly the kind of invisible gap that makes a
+            # score wrong in a way nobody notices. Say so.
+            res.warnings.append(
+                "scoring file has no other_allele column, so strand-ambiguity "
+                "(A/T, C/G) detection is DISABLED for this run -- any variant "
+                "reported on the opposite strand may be counted wrongly"
+            )
     else:
         return res
 
