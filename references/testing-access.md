@@ -141,6 +141,12 @@ fee" on the bill.
 - https://www.ondemand.labcorp.com/ (note: `labcorpondemand.com` redirects here)
 - https://www.functionhealth.com/faq
 
+**Subscription apps that bundle these same labs** — Function Health and Marek
+Health above, and consumer longevity apps like Death Clock: The Life Lab — route
+to the same Quest and Labcorp draw sites. What you are paying extra for is
+interpretation and tracking, not different blood.
+→ [Consumer health apps](consumer-health-apps.md)
+
 ### State restrictions — two widely-repeated claims that are wrong
 
 **"New York bans consumer lab testing."** Overstated. New York's Wadsworth Center

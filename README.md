@@ -52,6 +52,15 @@ there are published prescribing guidelines keyed to genotype.
 **"I have my 23andMe/Ancestry raw data. Now what?"**
 → [Analysis pipeline](references/dna-analysis-pipeline.md)
 
+**"Is this longevity app worth paying for?"**
+→ [Consumer health apps](references/consumer-health-apps.md)
+
+Apps like **Death Clock: The Life Lab** sell a projected death date built from a
+questionnaire and blood biomarkers. Worth knowing before you subscribe: **it does
+no DNA analysis at all**, and the blood panel underneath it can usually be
+self-ordered for less. Five questions to ask any app in this category are in the
+guide.
+
 **"What does this result actually mean?"**
 → [Interpreting results](references/interpreting-results.md) — **read this one.**
 
@@ -107,6 +116,7 @@ that print to PDF cleanly and carry the disclaimer automatically.
 | [**Testing access**](references/testing-access.md) | Free/at-cost routes: ACA $0 screenings, FQHC sliding scale, hospital charity care under IRS §501(r), Helix programs, GoodLabs blood-donation model, direct-to-consumer lab prices. Plus which widely-repeated claims are wrong. |
 | [**Pharmacogenomics**](references/pharmacogenomics.md) | How your genes affect drug response, which gene/drug pairs have real prescribing guidance, and how to get tested. |
 | [**Analysis pipeline**](references/dna-analysis-pipeline.md) | Raw data → imputation → clumping → scoring. Free tools, real commands, and the traps (genome build mismatch, imputation quality filtering). |
+| [**Consumer health apps**](references/consumer-health-apps.md) | How to evaluate commercial longevity apps that sell you a biological age or a death date — what they actually measure, what the free tier really covers, where the health data goes. Includes Death Clock: The Life Lab. |
 | [**Interpreting results**](references/interpreting-results.md) | Why a raw score means nothing alone, the ancestry portability problem, relative vs absolute risk, why consumer chips aren't clinical tests. |
 | [**Genealogy research**](references/genealogy-research.md) | The source ladder, the heuristics that actually break cases, using DNA matches properly, evidence discipline. |
 | [**Contribute to research**](references/contribute-to-research.md) | Where to donate your data, what you get back, and the honest tradeoffs. |
