@@ -26,6 +26,8 @@ python3 scripts/pii_scan.py --self-test >/dev/null || fail "pii_scan self-test"
 pass "pii_scan.py detectors"
 python3 scripts/make_report.py --self-test >/dev/null || fail "make_report self-test"
 pass "make_report.py"
+python3 scripts/pgx_lookup.py --self-test >/dev/null || fail "pgx_lookup self-test"
+pass "pgx_lookup.py"
 
 echo
 echo "== end-to-end pipeline on synthetic data =="
@@ -88,6 +90,17 @@ if curl -sS --max-time 25 -o "$REAL" \
   pass "real PGS Catalog file scores to $expected (2x sum of weights)"
 else
   printf '  \033[33mskip\033[0m network unavailable\n'
+fi
+
+echo
+echo "== live CPIC API (network; skipped if offline) =="
+if out=$(python3 scripts/pgx_lookup.py --drug clopidogrel 2>/dev/null) && [ -n "$out" ]; then
+  grep -q "CYP2C19" <<<"$out" || fail "CPIC: clopidogrel did not return CYP2C19"
+  grep -q "Level A" <<<"$out" || fail "CPIC: clopidogrel/CYP2C19 not at level A"
+  grep -qi "not medical advice" <<<"$out" || fail "CPIC output missing disclaimer"
+  pass "CPIC live lookup: clopidogrel -> CYP2C19 at level A"
+else
+  printf '  \033[33mskip\033[0m CPIC API unreachable\n'
 fi
 
 echo
