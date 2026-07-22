@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  # A contributor could add personal data at any time; re-scan weekly so a
+  # long-lived branch or an unnoticed merge does not sit there leaking.
+  schedule:
+    - cron: "17 6 * * 1"
+
+jobs:
+  test:
+    name: self-tests, pipeline, and PII scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run full test suite
+        run: bash tests/run_tests.sh
+
+  pii-gate:
+    name: PII gate (blocking)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Deliberately separate from the test job: if someone breaks the test
+      # script, this gate still runs and still blocks the merge.
+      - name: Verify the scanner's own detectors still fire
+        run: python3 scripts/pii_scan.py --self-test
+
+      - name: Scan repository for personal data
+        run: python3 scripts/pii_scan.py
+
+  links:
+    name: external links resolve
+    runs-on: ubuntu-latest
+    # Informational: government and lab sites rate-limit CI runners, so a
+    # failure here is a prompt to check by hand, not a reason to block a merge.
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check links in references
+        run: bash tests/check_links.sh

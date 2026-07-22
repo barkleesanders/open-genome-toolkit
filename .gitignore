@@ -1,0 +1,84 @@
+# ---------------------------------------------------------------------------
+# THE MOST IMPORTANT FILE IN THIS REPO.
+#
+# If you fork this and run the tools on your own DNA, your genome ends up in
+# this working directory. A genome is not a password -- you cannot rotate it,
+# and it identifies your relatives as well as you. Once it is pushed to a
+# public remote, it is public forever.
+#
+# Everything below is ignored by default. Do not "git add -f" your way past it.
+# ---------------------------------------------------------------------------
+
+# Raw consumer DNA exports (23andMe, AncestryDNA, MyHeritage, FTDNA, LivingDNA)
+*genome*.txt
+*genome*.zip
+*_raw_data*
+*RawData*
+AncestryDNA.txt
+MyHeritage_raw_dna_data.csv
+genome_*.txt
+
+# Normalized / intermediate / imputed genotype data
+*.tsv
+*.vcf
+*.vcf.gz
+*.bcf
+*.bgen
+*.bed
+*.bim
+*.fam
+*.pgen
+*.pvar
+*.psam
+*.dose.vcf.gz
+*.info.gz
+*.haps
+*.sample
+chr*.zip
+
+# Scoring output and reports derived from real data
+results/
+output/
+my-*/
+*-results.json
+*-report.html
+*-report.pdf
+
+# Lab results, medical records, and health exports
+labs/
+lab-results/
+medical-records/
+apple-health-export*
+export.xml
+*.cda
+
+# Genealogy vaults contain living people's names, birthdates, and addresses
+vault/
+family-tree/
+*.ged
+*.gedcom
+
+# Credentials
+.env
+.env.*
+*api-key*
+*apikey*
+*_token
+credentials.json
+secrets.*
+
+# Local scratch
+tmp/
+scratch/
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Explicit allow-list: the synthetic fixtures this repo ships for its own tests.
+# These contain invented data only -- no human's genome is in this repository.
+!tests/fixtures/*.tsv
+!tests/fixtures/*.txt
